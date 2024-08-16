@@ -1,0 +1,358 @@
+/* Body styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to right, #b74097, #510440, #d411c3);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.game-card {
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  /* Initial black shadow */
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  animation: shineShadow 3s infinite;
+  /* Apply shineShadow animation */
+  text-align: center;
+  background-color: purple;
+  /* Changed background color to purple */
+}
+
+@keyframes shineShadow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* Start and end with black shadow */
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    /* Midpoint with shining effect */
+  }
+}
+
+.game-card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  /* Adjusted position to be slightly outside the top */
+  left: -10px;
+  /* Adjusted position to be slightly outside the left */
+  width: calc(100% + 20px);
+  /* Increased width to cover the entire box + extra for outside effect */
+  height: calc(100% + 20px);
+  /* Increased height to cover the entire box + extra for outside effect */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  /* Shining effect around the border */
+  z-index: -1;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.game-info {
+  text-align: center;
+}
+
+.game-info h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+
+.game-info p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.game-image {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #7c0f71, #ba2590);
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(164, 46, 151, 0.6);
+  box-sizing: border-box;
+}
+
+.download-button:hover {
+  background: linear-gradient(to right, #87047c, #b04189);
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4), 0 0 40px rgba(183, 51, 200, 0.9);
+}
+
+.download-button:hover {
+  background: linear-gradient(to right, #960348, #ff66db);
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4), 0 0 40px rgba(127, 17, 116, 0.9);
+}
+
+.star-ratings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stars input[type="radio"] {
+  display: none;
+}
+
+.stars label {
+  font-size: 1em;
+  color: #000000;
+  padding: 0.1em;
+  cursor: pointer;
+}
+
+.stars label:before {
+  content: '\2605';
+}
+
+.stars input[type="radio"]:checked~label {
+  color: #ffcc00;
+}
+
+.stars input[type="radio"]:hover~label {
+  color: gold;
+}
+
+
+
+/* Animation for file info */
+.file-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  /* Initial font size */
+  color: #333;
+  /* Text color */
+  font-family: 'Arial', sans-serif;
+  /* Font family */
+  padding: 10px;
+  /* Padding around the file info */
+  border-radius: 8px;
+  /* Rounded corners */
+  background-color: #f7f7f7;
+  /* Background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Box shadow */
+  position: relative;
+  /* Position for pseudo elements */
+  overflow: hidden;
+  /* Hide overflowing content */
+}
+
+/* Pseudo elements for design */
+.file-info::before,
+.file-info::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #FFB6C1, #9370DB);
+  /* Gradient background */
+  z-index: -1;
+  /* Behind the content */
+  transition: transform 0.3s ease;
+}
+
+/* Pseudo elements initial position */
+.file-info::before {
+  left: 0;
+  transform: skewX(-45deg) translateX(-100%);
+}
+
+.file-info::after {
+  right: 0;
+  transform: skewX(45deg) translateX(100%);
+}
+
+/* Hover effect for pseudo elements */
+.file-info:hover::before {
+  transform: skewX(-45deg) translateX(0);
+}
+
+.file-info:hover::after {
+  transform: skewX(45deg) translateX(0);
+}
+
+/* Style for file icon */
+.file-info .file-icon {
+  margin-right: 5px;
+  font-size: 24px;
+  color: #FF5733;
+  /* File icon color */
+}
+
+/* Style for file size */
+.file-info .file-size {
+  font-weight: bold;
+  color: #5E2D79;
+  /* File size text color */
+}
+
+
+@media screen and (min-width: 320px) {
+  .game-info h2 {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
+  .game-info p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+
+  .download-button {
+    font-size: 16px;
+    padding: 12px 30px;
+    margin-top: 15px;
+  }
+
+  .stars {
+    font-size: 1.2em;
+  }
+
+  .stars label {
+    font-size: 0.8em;
+  }
+
+  .game-card {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .game-card {
+    padding: 60px;
+    margin-left: 10px;
+  }
+
+  .game-info h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    overflow-wrap: break-word;
+  }
+
+  .game-info p {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+  }
+
+  .download-button {
+    font-size: 20px;
+    padding: 15px 40px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #a12ad4, #e21ca3);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 95, 109, 0.6);
+    box-sizing: border-box;
+  }
+
+  .download-button:hover {
+    background: linear-gradient(to right, #560649, #e60397);
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 95, 226, 0.9);
+    text-decoration: none;
+  }
+
+  .stars {
+    font-size: 2em;
+  }
+
+  .stars label {
+    font-size: 1em;
+  }
+
+  .game-image {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 230px;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .game-card {
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .game-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+  }
+
+  .game-info p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .download-button {
+    font-size: 16px;
+    padding: 10px 30px;
+    margin-top: 15px;
+  }
+
+  .stars {
+    font-size: 1.5em;
+  }
+
+  .stars label {
+    font-size: 0.8em;
+  }
+
+  .game-image {
+    margin-left: 0;
+    align-self: center;
+  }
+}
