@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Godfather of Crime: Al Capone</title>
+    <link rel="stylesheet" href="../Success-Stories css/story styling.css">
+    <link rel="stylesheet" href="../Success-Stories css/Success-Stories mobile.css">
+    <link rel="icon" href="../assets success story/my.ico" type="image/x-icon">
+    <!-- Link to your CSS stylesheet -->
+  </head>
+
+  <body>
+    <header class="animated-header">
+      <h1>               </h1>
+    </header>
+
+    <main class="animated-content">
+      <section class="success-story">
+        <h5>           </h5>
+
+        <p>          </p>
+
+        <img class="left" src="../assets success story/Al Capone 1.jpg" alt="1">
+         <img class="right" src="../assets success story/ Ardern 2.jpg" alt="2">
+        <img class="left2" src="../assets success story/Jacinda Ardern 3-m.jpg" alt="3">
+
+      </section>
+    </main>
+
+
+
+  </body>
+
+</html>
