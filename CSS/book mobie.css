@@ -1,0 +1,86 @@
+/* Shared styles for all screen sizes */
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #00aaff, #007bff);
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -1;
+}
+
+/* Keyframes animation as defined in your original CSS */
+
+/* Large Mobile - 425px */
+@media (max-width: 425px) {
+
+    /* Adjust header styles for large mobile screens */
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+}
+
+/* Small Mobile - 320px */
+@media (max-width: 320px) {
+
+    /* Adjust header styles for small mobile screens */
+    header {
+        padding: 5px;
+        text-align: center;
+        /* Center the text within the header */
+    }
+
+    h1 {
+        font-size: 0.7rem;
+        /* Reduce font size even further */
+        letter-spacing: 1px;
+        text-align: center;
+        /* Center the text within the h1 element */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Medium - 360px */
+@media (max-width: 360px) {
+
+    /* Adjust header styles for medium-sized screens */
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+
+
+
+    /* Tablet - 768px */
+    @media (max-width: 768px) {
+        /* Keep header styles as they are for tablets */
+        /* Keep content styles as they are for tablets */
+    }
+}

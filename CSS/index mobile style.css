@@ -1,0 +1,187 @@
+/* Media query for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+
+    /* Increase the padding-left property of the header.navbar-brand element */
+    header.navbar-brand {
+        padding-left: 100rem;
+    }
+
+    /* Set the position, width, and height properties of the .section-1 .row .col-md-6 .panel element to initial */
+    .section-1 .row .col-md-6 .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    /* Set the width and height properties of the .numbers .rect element to 10rem and 8em, respectively */
+    .numbers .rect {
+        width: 10rem;
+        height: 8em;
+    }
+
+    /* Set the font-size property of the .numbers .rect h1 element to 2rem */
+    .numbers .rect h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Media query for screens with a maximum width of 456px */
+@media only screen and (max-width: 456px) {
+
+    /* Increase the margin-top property of the .about-us-footer element to 8vmin */
+    .about-us-footer {
+        margin-top: 8vmin;
+    }
+}
+
+/* Large Mobile - 425px */
+@media (max-width: 425px) {
+    .animated-header {
+        font-size: 1.5rem;
+        /* Adjust header font size for large mobile screens */
+    }
+
+    .brand-img {
+        max-width: 100px;
+        /* Adjust brand image size for large mobile screens */
+    }
+}
+
+/* Small Mobile - 320px */
+@media (max-width: 320px) {
+    .animated-header {
+        font-size: 1.3rem;
+        /* Adjust header font size for small mobile screens */
+    }
+
+    .brand-img {
+        max-width: 80px;
+        /* Adjust brand image size for small mobile screens */
+    }
+}
+
+/* Medium - 360px */
+@media (max-width: 360px) {
+    .animated-header {
+        font-size: 1.4rem;
+        /* Adjust header font size for medium-sized screens */
+    }
+
+    .brand-img {
+        max-width: 90px;
+        /* Adjust brand image size for medium-sized screens */
+    }
+}
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+    .animated-header {
+        font-size: 1.7rem;
+        /* Adjust header font size for tablet screens */
+    }
+
+    .brand-img {
+        max-width: 120px;
+        /* Adjust brand image size for tablet screens */
+    }
+}
+
+/* General styles */
+.attractive-text {
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+
+/* Responsive styles for different screen sizes */
+@media (max-width: 768px) {
+    .attractive-text {
+        padding: 30px 15px;
+    }
+
+    .attractive-text h1 {
+        font-size: 36px;
+    }
+
+    .attractive-text b {
+        font-size: 20px;
+    }
+
+    .attractive-text h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .attractive-text {
+        padding: 20px 10px;
+    }
+
+    .attractive-text h1 {
+        font-size: 28px;
+    }
+
+    .attractive-text b {
+        font-size: 18px;
+    }
+
+    .attractive-text h5 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .attractive-text {
+        padding: 10px 5px;
+    }
+
+    .attractive-text h1 {
+        font-size: 24px;
+    }
+
+    .attractive-text b {
+        font-size: 16px;
+    }
+
+    .attractive-text h5 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .attractive-text {
+        padding: 5px 0px;
+        margin-bottom: 20px;
+    }
+
+    .attractive-text h1 {
+        font-size: 22px;
+    }
+
+    .attractive-text b {
+        font-size: 14px;
+    }
+
+    .attractive-text h5 {
+        font-size: 10px;
+    }
+}
+
+/* Styling for headings */
+.attractive-text h1 {
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.attractive-text b {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Styling for body text */
+.attractive-text h5 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,67 @@
+/* Original CSS styles */
+/* ... Your existing styles ... */
+
+/* Media queries for various screen sizes */
+@media screen and (max-width: 576px) {
+
+    /* Styles for screens up to 576px width */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Example: Displaying 2 columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    /* Styles for screens up to 425px width */
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        /* Example: Displaying 1 column on smaller screens */
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    /* Styles for screens up to 375px width */
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        /* Adjust styles as needed for smaller screens */
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* Styles for screens up to 991px width */
+    /* Adjust styles as needed for smaller screens */
+}
+
+/* Media query for 425px */
+@media screen and (max-width:425px) {
+    .header {
+        padding: 8px;
+        font-size: 1.1em;
+    }
+}
+
+/* Media query for 375px */
+@media screen and (max-width: 375px) {
+
+    .header {
+        padding: 5px;
+        font-size: 1em;
+    }
+}
+
+/* Media query for 320px */
+@media screen and (max-width: 320px) {
+
+    .header {
+        padding: 4px;
+        font-size: 0.9em;
+    }
+}
