@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual_Riches Library - Explore Kali Linux Revealed Book by Raphaël Hertzog, JimO’Gorman, Mati Aharoni, and
+      JoeO’Gorman </title>
+    <link rel="icon" href="../assets success story/my.ico" type="image/x-icon">
+    <meta name="description" content="Explore a variety of books at Virtual_Riches Library" />
+    <link rel="icon" href="../assets/success-story/book-icon.ico" type="image/x-icon">
+    <!-- Adjust the path to your book library icon -->
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f8f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        animation: bgMove 60s infinite linear;
+        /* Background animation */
+      }
+
+      @keyframes bgMove {
+        from {
+          background-position: 0 0;
+        }
+
+        to {
+          background-position: 100% 0;
+        }
+      }
+
+      .bookshelf {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .book {
+        width: 250px;
+        padding: 20px;
+        background-color: #af2626;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 255, 76, 0.2);
+        text-align: center;
+      }
+
+      .book img {
+        max-width: 100%;
+        max-height: 280px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+
+      .book h2 {
+        font-size: 1.4em;
+        margin-bottom: 5px;
+        color: #f1d5d5;
+      }
+
+      .book p {
+        font-size: 1em;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+
+      .file-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9em;
+        color: #54c658;
+        margin-bottom: 10px;
+      }
+
+      .file-icon {
+        margin-right: 5px;
+        font-size: 18px;
+        color: #4CAF50;
+      }
+
+      /* .file-size {
+        font-weight: bold;
+        color: #4CAF50;
+      } */
+
+      .star-ratings {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        color: #ffcc00;
+        margin-bottom: 10px;
+      }
+
+      .stars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .stars input[type="radio"] {
+        display: none;
+      }
+
+      .stars label {
+        font-size: 0.8em;
+        color: #000000;
+        padding: 0.1em;
+        cursor: pointer;
+      }
+
+      .stars label:before {
+        content: '\2605';
+      }
+
+      .stars input[type="radio"]:checked~label {
+        color: #ffcc00;
+      }
+
+      .download-button {
+        display: inline-block;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background: #4CAF50;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+      }
+
+      .download-button:hover {
+        background: #45a049;
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(69, 160, 73, 0.6);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bookshelf">
+      <div class="book">
+        <img src="../assets book/65.jpg" alt="Book Cover">
+        <h2>Kali Linux Revealed</h2>
+        <p>Raphaël Hertzog, JimO’Gorman, Mati Aharoni, and JoeO’Gorman</p>
+        <div class="file-info">
+          <span class="file-icon">&#128230;</span>
+          <span class="file-size">eBook | PDF</span>
+        </div>
+        <div class="star-ratings">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1"></label>
+          </div>
+        </div>
+        <a href="https://www.dropbox.com/scl/fi/9fv3zcbolaxpizsg6yjhg/Kali-Linux-Revealed-65.pdf?rlkey=mdqnt6qrpebo5odwv1j03do1j&dl=0"
+          class="download-button">
+          Download
+        </a>
+      </div>
+
+    </div>
+  </body>
+
+</html>
