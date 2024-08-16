@@ -1,0 +1,71 @@
+/* Medium - 360px */
+@media (max-width: 360px) {
+    .animated-header {
+        font-size: 0.6rem;
+        /* Further reduce font size */
+    }
+
+    .success-story {
+        font-size: 0.7rem;
+        /* Reduce text size */
+    }
+
+    .animated-content {
+        padding: 2px;
+        /* Further reduce content padding */
+    }
+}
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+    .animated-header {
+        font-size: 0.8rem;
+        /* Return font size to normal */
+    }
+
+    .success-story {
+        font-size: 0.9rem;
+        /* Return text size to normal */
+    }
+
+    .animated-content {
+        padding: 7px;
+        /* Return content padding to normal */
+    }
+}
+
+/* Large Mobile - 425px */
+@media (max-width: 425px) {
+    .animated-header {
+        font-size: 0.7rem;
+        /* Further reduce font size */
+    }
+
+    .success-story {
+        font-size: 0.8rem;
+        /* Reduce text size */
+    }
+
+    .animated-content {
+        padding: 4px;
+        /* Further reduce content padding */
+    }
+}
+
+/* Small Mobile - 320px */
+@media (max-width: 320px) {
+    .animated-header {
+        font-size: 0.5rem;
+        /* Further reduce font size */
+    }
+
+    .success-story {
+        font-size: 0.6rem;
+        /* Further reduce text size */
+    }
+
+    .animated-content {
+        padding: 2px;
+        /* Further reduce content padding */
+    }
+}

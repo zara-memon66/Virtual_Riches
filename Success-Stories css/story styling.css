@@ -1,0 +1,120 @@
+/* Updated styles for the header with unique animations and colors */
+header {
+    background-color: #1a1a1a;
+    /* Dark gray background color */
+    color: #ff5500;
+    /* Orange text color */
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+/* Animated header styles with a custom animation */
+.animated-header {
+    animation: pulse 2s alternate infinite;
+    /* Add a pulse animation */
+}
+
+/* Updated styles for the content section with unique animations and colors */
+.success-story {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    /* Dark background color */
+    color: #fff;
+    /* White text color */
+}
+
+/* Animated content styles with a custom animation */
+.animated-content {
+    animation: fadeInFromTop 2s ease;
+    /* Add a fade-in from the top animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+        color: #d0ff00;
+        /* Red text color during the pulse */
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInFromTop {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Rest of your styles and design elements */
+
+
+/* CSS for image animations */
+
+img.left {
+    max-width: 60%;
+    float: left;
+    margin: 0 20px 10px 8px;
+    /* Added margin-right to create space on the left side of the image */
+}
+
+/* Move the second image to the right side */
+img.right {
+    max-width: 50%;
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+img.left2 {
+    max-width: 60%;
+    float: left;
+    margin: 0 20px 10px 8px;
+    /* Added margin-right to create space on the left side of the image */
+}
+
+/* Rest of your styles and design elements */
+
+/* Animation for h5 elements */
+.success-story h5 {
+    animation: increaseFontSize 2s alternate infinite;
+    font-size: 3rem;
+    /* Larger initial font size for h5 elements */
+}
+
+@keyframes increaseFontSize {
+    0% {
+        font-size: 1.4rem;
+    }
+
+    50% {
+        font-size: 1.7rem;
+        color: #11ff00;
+        /* Orange text color during animation */
+    }
+
+    100% {
+        font-size: 1.9rem;
+    }
+}
+
+/* Increase font size and add some margin to paragraphs */
+.success-story p {
+    font-size: 1.3em;
+    /* Adjust the font size as needed */
+    margin-bottom: 18px;
+    /* Add margin at the bottom of paragraphs */
+}

@@ -1,0 +1,45 @@
+/* Add styles for the header */
+.animated-header {
+    text-align: center;
+    background-color: #000000;
+    /* Dark background color (black) */
+    padding: 1rem 0;
+    color: #ff0000;
+    /* Red text color */
+    font-size: 2rem;
+    position: relative;
+    /* Position the container relatively to contain the icon */
+}
+
+/* Styles for the success stories section */
+.success-stories {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    background-color: rgb(217, 255, 0);
+    /* Red background for each story */
+    color: #fff;
+    /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    /* Add transition for smooth animation */
+    font-family: 'Arial', sans-serif;
+    /* Use an attractive font of your choice */
+}
+
+/* Add a hover effect for the stories */
+article:hover {
+    background-color: #ff5500;
+    /* Change background color on hover (orange) */
+    color: #000000;
+    /* Change text color on hover (black) */
+    transform: scale(1.05);
+    /* Add a slight scale-up effect on hover */
+}
+
+/* Rest of your styles and design elements */
