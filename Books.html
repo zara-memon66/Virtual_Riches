@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Virtual_Riches Book Library</title>
+        <link rel="stylesheet" href="../CSS/Books.css">
+        <link rel="stylesheet" href="../CSS/book mobie.css">
+        <link rel="icon" href="../assets success story/my.ico" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <style>
+            header {
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 20px;
+                color: white;
+                position: relative;
+                z-index: 1;
+            }
+
+            header:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(45deg, #00aaff, #007bff);
+                animation: gradientAnimation 10s ease infinite;
+                z-index: -1;
+            }
+
+            @keyframes gradientAnimation {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+
+            .search-container {
+                text-align: center;
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            #search {
+                padding: 10px;
+                border: 1px solid #007bff;
+                border-radius: 5px;
+                width: 200px;
+                /* Increased width */
+                transition: transform 0.3s;
+                /* Added animation */
+            }
+
+            #search-btn {
+                padding: 10px 20px;
+                background: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            #search-btn:hover {
+                background: #0056b3;
+            }
+
+            #search:focus {
+                transform: scale(1.02);
+                /* Add a subtle animation when the search box is focused */
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f3f3f3;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background: linear-gradient(135deg, #007bff, #00aaff);
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 20px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            header:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(45deg, #00aaff, #007bff);
+                animation: gradientAnimation 10s ease infinite;
+                z-index: -1;
+            }
+
+            @keyframes gradientAnimation {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            @keyframes textGlow {
+                0% {
+                    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+                }
+
+                50% {
+                    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+                }
+
+                100% {
+                    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+                }
+            }
+
+            h1 {
+                font-size: 3rem;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                animation: textGlow 2s ease-in-out infinite;
+            }
+
+            .bookshelf {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 5px;
+            }
+
+            .book {
+                background-color: #f3f3f3;
+                border: 1px solid #ddd;
+                border-radius: 50%;
+                padding: 30px;
+                /* Increased padding */
+                margin: 10px;
+                text-align: center;
+                transition: transform 0.2s;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Automatically assign unique background colors to each book */
+            .book:nth-child(odd) {
+                background-color: #ffdb58;
+                /* Yellow */
+            }
+
+            .book:nth-child(even) {
+                background-color: #7ed957;
+                /* Green */
+            }
+
+            /* Additional rules to create a variety of background colors (except for red) */
+            .book:nth-child(4n + 1) {
+                background-color: #70a1ff;
+                /* Blue */
+            }
+
+            .book:nth-child(4n + 2) {
+                background-color: #ff9a9a;
+                /* Light Red */
+            }
+
+            .book:nth-child(4n + 3) {
+                background-color: #ff70ff;
+                /* Pink */
+            }
+
+            .book:nth-child(4n + 4) {
+                background-color: #a1ffa1;
+                /* Light Green */
+            }
+
+            /* Add a subtle hover animation */
+            .book:hover {
+                transform: scale(1.05);
+                transition: transform 0.2s ease-in-out;
+            }
+
+
+            .book:hover {
+                transform: scale(1.05);
+            }
+
+            /* Style the book cover image */
+            .book img {
+                width: 190px;
+                /* Set the desired width */
+                height: 170px;
+                /* Set the desired height */
+                object-fit: contain;
+                /* Ensure the image fits entirely within the frame */
+                border-radius: 50%;
+            }
+
+
+            .book-info {
+                padding: 10px;
+            }
+
+            .book-title {
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: 0.2px;
+                margin-bottom: 1;
+            }
+
+            /* Adjust the author styles to break after 4 words and center the text */
+            .book-author {
+                color: hsl(0, 100%, 47%);
+                /* Dark Orange */
+                font-size: 0.8rem;
+                font-weight: bold;
+                max-width: 180px;
+                /* Maximum width for author name */
+                text-align: center;
+                /* Center the author's name */
+                white-space: pre-line;
+                /* Allow line breaks for author names */
+                word-break: break-all;
+                hyphens: auto;
+            }
+
+            .book-download {
+                display: inline-block;
+                /* Changed to inline-block for styling */
+                padding: 5px 10px;
+                /* Added padding */
+                background: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+                text-decoration: none;
+                /* Removed underline */
+            }
+
+            .book-download:hover {
+                background: #0056b3;
+            }
+
+            /* Fixed search bar at the bottom-right */
+            .search-container {
+                text-align: center;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+                /* Ensure it's above other content */
+                background-color: rgba(255, 255, 255, 0.9);
+                /* Add a semi-transparent background */
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+
+            #search {
+                padding: 10px;
+                border: 1px solid #007bff;
+                border-radius: 5px;
+                width: 200px;
+                transition: transform 0.3s;
+            }
+
+            #search-btn {
+                padding: 10px 20px;
+                background: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            #search-btn:hover {
+                background: #0056b3;
+            }
+
+            #search:focus {
+                transform: scale(1.02);
+            }
+
+            .highlight {
+                background-color: yellow;
+            }
+
+            /* Style the h2 element */
+            h2 {
+                white-space: normal;
+                word-wrap: break-word;
+            }
+
+            /* Book Mobile */
+            /* Shared styles for all screen sizes */
+            header {
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 20px;
+                color: white;
+                position: relative;
+                z-index: 1;
+            }
+
+            header:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(45deg, #00aaff, #007bff);
+                animation: gradientAnimation 10s ease infinite;
+                z-index: -1;
+            }
+
+            /* Keyframes animation as defined in your original CSS */
+
+            /* Large Mobile - 425px */
+            @media (max-width: 425px) {
+
+                /* Adjust header styles for large mobile screens */
+                header {
+                    padding: 10px;
+                }
+
+                h1 {
+                    font-size: 2rem;
+                    letter-spacing: 3px;
+                }
+            }
+
+            /* Small Mobile - 320px */
+            @media (max-width: 320px) {
+
+                /* Adjust header styles for small mobile screens */
+                header {
+                    padding: 5px;
+                    text-align: center;
+                    /* Center the text within the header */
+                }
+
+                h1 {
+                    font-size: 0.7rem;
+                    /* Reduce font size even further */
+                    letter-spacing: 1px;
+                    text-align: center;
+                    /* Center the text within the h1 element */
+                }
+            }
+
+            /* Medium - 360px */
+            @media (max-width: 360px) {
+
+                /* Adjust header styles for medium-sized screens */
+                header {
+                    padding: 15px;
+                }
+
+                h1 {
+                    font-size: 2rem;
+                    letter-spacing: 3px;
+                }
+
+
+
+                /* Tablet - 768px */
+                @media (max-width: 768px) {
+                    /* Keep header styles as they are for tablets */
+                    /* Keep content styles as they are for tablets */
+                }
+            }
+        </style>
+
+
+        <header>
+            <h1>Virtual_Riches Book Library</h1>
+        </header>
+
+        <div class="bookshelf">
+            <!--  book content goes here -->
+
+            <!-- Book Entity 1 -->
+            <article class="book">
+                <img src="../assets book/1.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">Modern Cryptography</h2>
+                    <p class="book-author">Author: Jonathan Katz & Yehuda Lindell</p>
+                    <!-- <a class="book-download" href="../Books html/1.html" download>Explore</a> -->
+                    <a href="../Books html/1.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 2 -->
+            <article class="book">
+                <img src="../assets book/2.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">Cloud Computing for Dummies</h2>
+                    <p class="book-author">Author: Judith Hurwitz, Robin Bloor, Marcia Kaufman</p>
+                    <a href="../Books html/2.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 3 -->
+            <article class="book">
+                <img src="../assets book/3.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The code book </h2>
+                    <p class="book-author">Author: Simon singh</p>
+                    <a href="../Books html/3.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 4 -->
+            <article class="book">
+                <img src="../assets book/4.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The pragmatic programmer </h2>
+                    <p class="book-author">Author: Andrew, Hunt, Thomas David.</p>
+                    <a href="../Books html/4.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 5 -->
+            <article class="book">
+                <img src="../assets book/5.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> IOS hacker's handbook </h2>
+                    <p class="book-author">Author: Charlie Miller</p>
+                    <a href="../Books html/5.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 6 -->
+            <article class="book">
+                <img src="../assets book/6.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Bitcoin and beyond </h2>
+                    <p class="book-author">Author: Taylor & Francis Group</p>
+                    <a href="../Books html/6.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 7 -->
+            <article class="book">
+                <img src="../assets book/7.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Clean Code </h2>
+                    <p class="book-author">Author: Robert C. Martin Series</p>
+                    <a href="../Books html/7.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 8 -->
+            <article class="book">
+                <img src="../assets book/8.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Operating system concepts </h2>
+                    <p class="book-author">Author: Abraham Silberschatz , Peter Baer Galvin , Greg Gaagne</p>
+                    <a href="../Books html/8.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 9 -->
+            <article class="book">
+                <img src="../assets book/9.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Computer security fundamentals </h2>
+                    <p class="book-author">Author: Dr.Chunk Easttom</p>
+                    <a href="../Books html/9.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 10 -->
+            <article class="book">
+                <img src="../assets book/10.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Cloud computing concepts , technology & architecture </h2>
+                    <p class="book-author">Author: Thomas Erl</p>
+                    <a href="../Books html/10.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 11 -->
+            <article class="book">
+                <img src="../assets book/11.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Artificial Intelligence a modern approch </h2>
+                    <p class="book-author">Author: Stuart J. Russell and Peter Norvig</p>
+                    <a href="../Books html/11.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 12 -->
+            <article class="book">
+                <img src="../assets book/12.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Algorithms </h2>
+                    <p class="book-author">Author: Jeff Erickson</p>
+                    <a href="../Books html/12.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 13 -->
+            <article class="book">
+                <img src="../assets book/13.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Dark Web Intelligence Methods & Legal Issues </h2>
+                    <p class="book-author">Author:Chris Hoofnagle</p>
+                    <a href="../Books html/13.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 14 -->
+            <article class="book">
+                <img src="../assets book/14.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Computer networking a top-down approach </h2>
+                    <p class="book-author">Author: James F. Kurose, Keith W. Ross</p>
+                    <a href="../Books html/14.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 15 -->
+            <article class="book">
+                <img src="../assets book/15.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Google Hacking for Penetration Testers </h2>
+                    <p class="book-author">Author: Johnny Long</p>
+                    <a href="../Books html/15.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 16 -->
+            <article class="book">
+                <img src="../assets book/16.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Crosssing the chasm </h2>
+                    <p class="book-author">Author: Geoffrey A.Moore</p>
+                    <a href="../Books html/16.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 17 -->
+            <article class="book">
+                <img src="../assets book/17.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Cryptography </h2>
+                    <p class="book-author">Author: Mohamed Barakat, Christian Eder, Timo Hanke</p>
+                    <a href="../Books html/17.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 18 -->
+            <article class="book">
+                <img src="../assets book/18.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Darknet Master </h2>
+                    <p class="book-author">Author: Procpolo Scotto</p>
+                    <a href="../Books html/18.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 19 -->
+            <article class="book">
+                <img src="../assets book/19.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Intelligent Data Governance </h2>
+                    <p class="book-author">Author: Scott Baker and Peter Sjoberg</p>
+                    <a href="../Books html/19.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 20 -->
+            <article class="book">
+                <img src="../assets book/20.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Don’t Make Me Think! </h2>
+                    <p class="book-author">Author: Steve Krug</p>
+                    <a href="../Books html/20.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 21 -->
+            <article class="book">
+                <img src="../assets book/21.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Cybersecurity for-dummies </h2>
+                    <p class="book-author">Author: Lawrence C.Miller , CISSP</p>
+                    <a href="../Books html/21.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 22 -->
+            <article class="book">
+                <img src="../assets book/22.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">Code - The Hidden Language of Computer Hardware and Software </h2>
+                    <p class="book-author">Author: charless petzold</p>
+                    <a href="../Books html/22.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 23 -->
+            <article class="book">
+                <img src="../assets book/23.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">Common Windows, Linux and Web Server Systems Hacking Techniques </h2>
+                    <p class="book-author">Author: Dr. Hidaia Mahmood Alassouli</p>
+                    <a href="../Books html/23.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 24 -->
+            <article class="book">
+                <img src="../assets book/24.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Exploit Development </h2>
+                    <p class="book-author">Author: unknown</p>
+                    <a href="../Books html/24.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 25 -->
+            <article class="book">
+                <img src="../assets book/25.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Web Application hacking </h2>
+                    <p class="book-author">Author: Matthew Fisher </p>
+                    <a href="../Books html/25.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 26 -->
+            <article class="book">
+                <img src="../assets book/26.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Red Team handbook </h2>
+                    <p class="book-author">Author: unknown</p>
+                    <a href="../Books html/26.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 27 -->
+            <article class="book">
+                <img src="../assets book/27.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The DarkWeb </h2>
+                    <p class="book-author">Author: unknown</p>
+                    <a href="../Books html/27.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 28 -->
+            <article class="book">
+                <img src="../assets book/28.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Design of Everyday Things </h2>
+                    <p class="book-author">Author: DON NORMAN</p>
+                    <a href="../Books html/28.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 29 -->
+            <article class="book">
+                <img src="../assets book/29.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Metaverse </h2>
+                    <p class="book-author">Author: MATTHEW BALL</p>
+                    <a href="../Books html/29.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 30 -->
+            <article class="book">
+                <img src="../assets book/30.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> SQL injection attacks and defense </h2>
+                    <p class="book-author">Author: Justin clarke </p>
+                    <a href="../Books html/30.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 31 not aavalible  -->
+
+            <!-- Book Entity 32 -->
+            <article class="book">
+                <img src="../assets book/32.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Law enforcement Intelligence Operations </h2>
+                    <p class="book-author">Author:DAVID L CARTER</p>
+                    <a href="../Books html/32.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 33 -->
+            <article class="book">
+                <img src="../assets book/33.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Lawful Hacking </h2>
+                    <p class="book-author">Author:Steven M.Bellovin,MattBlaze, Sandy Clark, & Susan Landau</p>
+                    <a href="../Books html/33.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+
+
+            <!-- Book Entity 34 -->
+            <article class="book">
+                <img src="../assets book/34.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Automate the Boring Stuff with Python </h2>
+                    <p class="book-author">Author: Al Sweigart</p>
+                    <a href="../Books html/34.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 35 -->
+            <article class="book">
+                <img src="../assets book/35.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Blackhat Hacking</h2>
+                    <p class="book-author">Author: Brady Bloxham</p>
+                    <a href="../Books html/36.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 36 -->
+            <article class="book">
+                <img src="../assets book/36.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">Buffer Overflow and Format String Overflow Vulnerabilities</h2>
+                    <p class="book-author">Author: Kyung-suk Lhee </p>
+                    <a href="../Books html/36.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 37 -->
+            <article class="book">
+                <img src="../assets book/37.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> C++ Primer</h2>
+                    <p class="book-author">Author: Stanley B. Lippman</p>
+                    <a href="../Books html/37.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 38 -->
+            <article class="book">
+                <img src="../assets book/38.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Certified blackhat: Methodlogy to unethical hacking </h2>
+                    <p class="book-author">Author:ABhishek kArmAkAr </p>
+                    <a href="../Books html/38.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 39 -->
+            <article class="book">
+                <img src="../assets book/39.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Cloud computing </h2>
+                    <p class="book-author">Author: unknown</p>
+                    <a href="../Books html/39.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 40 -->
+            <article class="book">
+                <img src="../assets book/40.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Wireshark Network Analysis </h2>
+                    <p class="book-author">Author: Laura Chappell</p>
+                    <a href="../Books html/40.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 41 -->
+            <article class="book">
+                <img src="../assets book/41.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Tor Browser Handbook </h2>
+                    <p class="book-author">Author: S.K. Masterson</p>
+                    <a href="../Books html/41.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 42 -->
+            <article class="book">
+                <img src="../assets book/42.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Data Mining </h2>
+                    <p class="book-author">Author: Jiawei Han , Micheline Kamber , Jian Pei</p>
+                    <a href="../Books html/42.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 43 -->
+            <article class="book">
+                <img src="../assets book/43.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Data Science from Scratch </h2>
+                    <p class="book-author">Author: Joel Grus</p>
+                    <a href="../Books html/43.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 44 -->
+            <article class="book">
+                <img src="../assets book/44.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Deep Learning </h2>
+                    <p class="book-author">Author: Ian Goodfellow,Yoshua Bengio,Aaron Courville</p>
+                    <a href="../Books html/44.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 45 -->
+            <article class="book">
+                <img src="../assets book/45.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">Development of the Advanced Encryption Standards </h2>
+                    <p class="book-author">Author: Miles E. Smid</p>
+                    <a href="../Books html/45.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 46 -->
+            <article class="book">
+                <img src="../assets book/46.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Data Science and Machine Learning </h2>
+                    <p class="book-author">Author: Dirk P. Kroese, Zdravko I. Botev, Thomas Taimre, Radislav Vaisman</p>
+                    <a href="../Books html/46.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 47 -->
+            <article class="book">
+                <img src="../assets book/47.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Network Security Monitoring Rationale </h2>
+                    <p class="book-author">Author: unknown</p>
+                    <a href="../Books html/47.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 48 -->
+            <article class="book">
+                <img src="../assets book/48.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Design Of UNIX Operating System </h2>
+                    <p class="book-author">Author: Maurice J. Bach</p>
+                    <a href="../Books html/48.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 49 -->
+            <article class="book">
+                <img src="../assets book/49.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">Introduction to Satellite Communication </h2>
+                    <p class="book-author">Author: Bruce R. Elbert</p>
+                    <a href="../Books html/49.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 50 -->
+            <article class="book">
+                <img src="../assets book/50.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Ghost In The Wires </h2>
+                    <p class="book-author">Author: Ghost In The Wires</p>
+                    <a href="../Books html/50.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 51 -->
+            <article class="book">
+                <img src="../assets book/51.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Gray Hat Hacking </h2>
+                    <p class="book-author">Author: Allen Harper, Shon Harris, Jonathan Ness,
+                        Chris Eagle, Gideon Lenkey, and Terron Williams</p>
+                    <a href="../Books html/51.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 52 -->
+            <article class="book">
+                <img src="../assets book/52.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Hacking Exposed </h2>
+                    <p class="book-author">Author: Stuart McClure, Joel Scambray , George Kurtz</p>
+                    <a href="../Books html/52.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 53 -->
+            <article class="book">
+                <img src="../assets book/53.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Hacking Into Computer Systems </h2>
+                    <p class="book-author">Author: unknown</p>
+                    <a href="../Books html/53.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 54 -->
+            <article class="book">
+                <img src="../assets book/54.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Hacking Rooting & Jailbreaking </h2>
+                    <p class="book-author">Author: ALEX WAGNER</p>
+                    <a href="../Books html/54.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 55 -->
+            <article class="book">
+                <img src="../assets book/55.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Hacking the Xbox </h2>
+                    <p class="book-author">Author: unknown</p>
+                    <a href="../Books html/55.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 56 -->
+            <article class="book">
+                <img src="../assets book/56.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Information Security Handbook for Network Beginners </h2>
+                    <p class="book-author">Author: unknown</p>
+                    <a href="../Books html/56.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 57 -->
+            <article class="book">
+                <img src="../assets book/57.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">Algorithms </h2>
+                    <p class="book-author">Author: Thomas H. Cormen ,Charles E. Leiserson ,Ronald L. Rivest ,Clifford
+                        Stein
+                    </p>
+                    <a href="../Books html/57.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 58 -->
+            <article class="book">
+                <img src="../assets book/58.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> IOS Application Security </h2>
+                    <p class="book-author">Author: David Thiel</p>
+                    <a href="../Books html/58.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 59 -->
+            <article class="book">
+                <img src="../assets book/59.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> IOS Hacking: Advanced Pentest & Forensic Techniques</h2>
+                    <p class="book-author">Author: Ömer Coşkun & Mark de Groot</p>
+                    <a href="../Books html/59.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 60 -->
+            <article class="book">
+                <img src="../assets book/60.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Secret State -A History Of Intelligence And EspioNage </h2>
+                    <p class="book-author">Author: COLONEL JOHN HUGHES-WILSON</p>
+                    <a href="../Books html/60.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 61 -->
+            <article class="book">
+                <img src="../assets book/61.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">Red Team - How To Succeed By Thinking Like The Enemy </h2>
+                    <p class="book-author">Author: MICAH ZENKO</p>
+                    <a href="../Books html/61.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 62 -->
+            <article class="book">
+                <img src="../assets book/62.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Black Hat Python </h2>
+                    <p class="book-author">Author: Justin Seitz</p>
+                    <a href="../Books html/62.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 63 -->
+            <article class="book">
+                <img src="../assets book/63.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Kali Linux - An Ethical Hacker's Cookbook </h2>
+                    <p class="book-author">Author: Himanshu Sharma</p>
+                    <a href="../Books html/63.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 64 -->
+            <article class="book">
+                <img src="../assets book/64.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Beginning with Kali Linux </h2>
+                    <p class="book-author">Author: unknown</p>
+                    <a href="../Books html/64.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 65 -->
+            <article class="book">
+                <img src="../assets book/65.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Kali Linux Revealed </h2>
+                    <p class="book-author">Author: Raphaël Hertzog, JimO’Gorman, Mati Aharoni, and JoeO’Gorman</p>
+                    <a href="../Books html/65.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 66 -->
+            <article class="book">
+                <img src="../assets book/66.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> CEH Certified Ethical Hacker </h2>
+                    <p class="book-author">Author: Kimberly Graves</p>
+                    <a href="../Books html/66.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 67 -->
+            <article class="book">
+                <img src="../assets book/67.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Art Of INTRUSION </h2>
+                    <p class="book-author">Author: Kevin D. Mitnick</p>
+                    <a href="../Books html/67.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 68 -->
+            <article class="book">
+                <img src="../assets book/68.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Learning Kali Linux </h2>
+                    <p class="book-author">Author: Ric Messier</p>
+                    <a href="../Books html/68.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 69 -->
+            <article class="book">
+                <img src="../assets book/69.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Practical iOS Applications Hacking </h2>
+                    <p class="book-author">Author: Mathieu RENARD</p>
+                    <a href="../Books html/69.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 70 -->
+            <article class="book">
+                <img src="../assets book/70.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Bio Revolution </h2>
+                    <p class="book-author">Author: unknown</p>
+                    <a href="../Books html/70.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 71 -->
+            <article class="book">
+                <img src="../assets book/71.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Metasploit The Penetration Tester’s Guide </h2>
+                    <p class="book-author">Author: David Kennedy, Jim O’Gorman, Devon Kearns, and Mati Aharoni</p>
+                    <a href="../Books html/71.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 72 -->
+            <article class="book">
+                <img src="../assets book/72.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> RUSSIA’S STRATEGY IN CYBERSPACE </h2>
+                    <p class="book-author">Author: unknown </p>
+                    <a href="../Books html/72.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 73 -->
+            <article class="book">
+                <img src="../assets book/73.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Nmap Network Scanning </h2>
+                    <p class="book-author">Author: Gordon "Fyodor" Lyon </p>
+                    <a href="../Books html/73.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 74 -->
+            <article class="book">
+                <img src="../assets book/74.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Python Crash Course </h2>
+                    <p class="book-author">Author: ERIC MATTHES </p>
+                    <a href="../Books html/74.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 75 -->
+            <article class="book">
+                <img src="../assets book/75.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Pegasus </h2>
+                    <p class="book-author">Author: unknown </p>
+                    <a href="../Books html/75.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 76 -->
+            <article class="book">
+                <img src="../assets book/76.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Hacking The Drones </h2>
+                    <p class="book-author">Author: Aatif Khan </p>
+                    <a href="../Books html/76.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 77 -->
+            <article class="book">
+                <img src="../assets book/77.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">Technical Analysis of the Pegasus Exploits on iOS </h2>
+                    <p class="book-author">Author: unknown </p>
+                    <a href="../Books html/77.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 78 -->
+            <article class="book">
+                <img src="../assets book/78.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Practical Malware Analysis </h2>
+                    <p class="book-author">Author: Micheal Sikorski , Andrew Honig </p>
+                    <a href="../Books html/78.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 79 -->
+            <article class="book">
+                <img src="../assets book/79.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Practical IoT Hacking </h2>
+                    <p class="book-author">Author: Fotios Chantzis,Ioannis Stais, Paulino Calderon, Evangelos
+                        Deirmentzoglou, and Beau Woods </p>
+                    <a href="../Books html/79.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 80 -->
+            <article class="book">
+                <img src="../assets book/80.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Satellite Cyberattacks and Security </h2>
+                    <p class="book-author">Author: unknown </p>
+                    <a href="../Books html/80.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 81 -->
+            <article class="book">
+                <img src="../assets book/81.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Digital Crome And Forensic Science In Cyberspace </h2>
+                    <p class="book-author">Author: unknown </p>
+                    <a href="../Books html/81.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 82 -->
+            <article class="book">
+                <img src="../assets book/82.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Social Engineering </h2>
+                    <p class="book-author">Author: Christopher Hadnagy </p>
+                    <a href="../Books html/82.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 83 -->
+            <article class="book">
+                <img src="../assets book/83.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Terror In The Dark </h2>
+                    <p class="book-author">Author: Nikita Malik </p>
+                    <a href="../Books html/83.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 84 -->
+            <article class="book">
+                <img src="../assets book/84.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Browser Hacker’s Handbook </h2>
+                    <p class="book-author">Author: Wade Alcorn , Christian Frichot, Michele Orrù </p>
+                    <a href="../Books html/84.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 85 -->
+            <article class="book">
+                <img src="../assets book/85.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">The Database Hacker’s Handbook </h2>
+                    <p class="book-author">Author: David Litchfield, Chris Anley, John Heasman, and Bill Grindlay </p>
+                    <a href="../Books html/85.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 86 -->
+            <article class="book">
+                <img src="../assets book/86.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title">The Elements of Computing Systems </h2>
+                    <p class="book-author">Author: Noam Nisn and shimon Schocken </p>
+                    <a href="../Books html/86.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 87 -->
+            <article class="book">
+                <img src="../assets book/87.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Hacker Playbook 2 - Practical Guide To Penetration Testing </h2>
+                    <p class="book-author">Author: Peter Kim </p>
+                    <a href="../Books html/87.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 88 -->
+            <article class="book">
+                <img src="../assets book/88.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Hacker Playbook 3 - Practical Guide To Penetration Testing </h2>
+                    <p class="book-author">Author: Peter Kim </p>
+                    <a href="../Books html/88.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 89 -->
+            <article class="book">
+                <img src="../assets book/89.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Mac Hacker’s Handbook </h2>
+                    <p class="book-author">Author: unknown </p>
+                    <a href="../Books html/89.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 90 -->
+            <article class="book">
+                <img src="../assets book/90.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> TOR Beginners to Expert Guide </h2>
+                    <p class="book-author">Author: Bruce Rogers </p>
+                    <a href="../Books html/90.html" class="book-download" click>Explore</a>
+
+                </div>
+            </article>
+
+            <!-- Book Entity 91 -->
+            <article class="book">
+                <img src="../assets book/91.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Tor and the dark art of anonymity </h2>
+                    <p class="book-author">Author: Lance Henderson </p>
+                    <a href="../Books html/91.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 92 -->
+            <article class="book">
+                <img src="../assets book/92.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The DeepWeb SuperPack </h2>
+                    <p class="book-author">Author: Lance Henderson </p>
+                    <a href="../Books html/92.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 93 -->
+            <article class="book">
+                <img src="../assets book/93.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Ethical Hacking & Penetration Testing </h2>
+                    <p class="book-author">Author: RAFAY BALOCH </p>
+                    <a href="../Books html/93.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 94 -->
+            <article class="book">
+                <img src="../assets book/94.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> Hacking : The Art Of Exploitation </h2>
+                    <p class="book-author">Author: jon erickson
+                    </p>
+                    <a href="../Books html/94.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Book Entity 95 -->
+            <article class="book">
+                <img src="../assets book/95.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <h2 class="book-title"> The Android Malware Handbook</h2>
+                    <p class="book-author">Author: Salvador Mandujano , Qian Han , V.S. Subrahmanian , Sebastian Porst ,
+                        Sai Deep Tetali
+                    </p>
+                    <a href="../Books html/95.html" class="book-download" click>Explore</a>
+                </div>
+            </article>
+
+            <!-- Add more book entities as needed -->
+
+
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for book at Virtual_Riches...">
+            <button id="search-btn">Search Book</button>
+        </div>
+
+        <div class="result">
+            <!-- Display search results here -->
+        </div>
+
+        <script src="../JS/books.js"></script>
+    </body>
+
+</html>
