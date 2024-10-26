@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Access free learning sources with Virtual_Riches</title>
+    <link href="../CSS/Free-Learning-Sources.css" rel="stylesheet" />
+    <link href="../assets success story/my.ico" rel="icon" type="image/x-icon" />
+    <meta name="description" content="Unlock a treasure trove of free learning sources with Virtual Riches" />
+    <!-- <link rel="stylesheet" href="../CSS/Free-Learning mobile.css"> -->
+    <link href="../assets success story/my.ico" rel="icon" type="image/x-icon" />
+
+
+    <!-- Link to the external  file -->
+
+
+    <!-- grid layout css -->
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+      }
+
+      .header {
+        text-align: center;
+        padding: 20px;
+        background-color: #800020;
+        color: white;
+        margin-bottom: 20px;
+      }
+
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        padding: 20px;
+      }
+
+      @media screen and (min-width: 320px) {
+        .grid {
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        }
+      }
+
+
+      /* Media query for 425px */
+      @media screen and (max-width:425px) {
+        .header {
+          padding: 8px;
+          font-size: 1.1em;
+        }
+      }
+
+      /* Media query for 375px */
+      @media screen and (max-width: 375px) {
+
+        .header {
+          padding: 5px;
+          font-size: 1em;
+        }
+      }
+
+      /* Media query for 320px */
+      @media screen and (max-width: 320px) {
+
+        .header {
+          padding: 4px;
+          font-size: 0.9em;
+        }
+      }
+
+
+      .card {
+        width: auto;
+        /* Corrected */
+        background-color: #964B00;
+        border: 1px solid #800020;
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+        animation: fade-in 0.5s ease;
+        overflow: hidden;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .text {
+        padding: 20px;
+      }
+
+      .text h3 {
+        margin-top: 0;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+      }
+
+      .text p {
+        margin-bottom: 20px;
+      }
+
+      .text button {
+        background-color: #800020;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .text button:hover {
+        background-color: #A33914;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Learn from the Best, Pay Nothing at Virtual Riches</h1>
+    </div>
+
+    <main class="grid">
+
+      <!-- CARDS -->
+
+
+      <div class="card">
+        <img src="../Assests Free-Learning/1.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Real Time Chat App</h5>
+          <p class="card-text">Building Real Time Chat App with Chat Engine IO & Socket IO.
+          </p>
+          <a href="https://www.mediafire.com/file/ize6zapugmmicbl/Building_Real_Time_Chat_App_with_Chat_Engine_IO___Socket_IO.rar/file"
+            class="btn btn-primary">Download </a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img src="../Assests Free-Learning/2.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Javascript </h5>
+          <p class="card-text">JavaScript: Under the Hood.</p>
+          <a href="https://www.mediafire.com/file/2t18pjojee0oj4j/JavaScript_+Under+the+Hood.zip/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/3.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> CyberSecurity Materials</h5>
+          <p class="card-text">📚+200 Materials of CyberSecurity in PDFs</p>
+          <a href="https://drive.google.com/drive/u/0/folders/12Mvq6kE2HJDwN2CZhEGWizyWt87YunkU"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/4.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Git</h5>
+          <p class="card-text">Git Essential Training </p>
+          <a href="https://www.mediafire.com/file/80fa992klfnv4vk/Git+Essential+Training.zip/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/5.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Adobe Photoshop</h5>
+          <p class="card-text">Adobe Photoshop course for Beginners</p>
+          <a href="https://mega.nz/folder/QrM0XD6B#ITFDfEGUaRT8LXTHHKCrbw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/6.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">DCSC hacking course</h5>
+          <p class="card-text">Leaked Drop organization DCSC hacking course..Click on buttons for
+            courses</p>
+          <a href="https://www.dropbox.com/scl/fi/8zh0k94ctbtliz6urkcah/DCSC-course.txt?rlkey=vk5va0wtqh2hsw4ad5llp14at&dl=0 "
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/7.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PENETRATION TESTING </h5>
+          <p class="card-text">PENETRATION TESTING FULL COURSE</p>
+          <a href="https://anonymfile.com/PP5N/penetration-testing.rar" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/8.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">78GB pack for EthicalHackers</h5>
+          <p class="card-text">Collection Of Many Checkers, Rats, Hacking Tools, Cracking tools,
+            and many more</p>
+          <a href="https://gofile.io/d/b4C2Wr" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/9.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ethical Hacking</h5>
+          <p class="card-text">Ethical Hacking Fundamental Course - Learn From Scratch</p>
+          <a href="https://drive.google.com/drive/folders/1QsnlqaK0nKKA_FGu-LjSlrqQHQftnByZ"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/10.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Network and Web Hacking</h5>
+          <p class="card-text">Network and Web Hacking course at your fingertips</p>
+          <a href="https://mega.nz/folder/YtU0WZyR#wDAyWeTCqz-g4-GXhP9MgA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/11.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Notion Course</h5>
+          <p class="card-text">Complete Notion Course Improve Your Productivity </p>
+          <a href="https://www.mediafire.com/file/1zuv5flzvih5204/Complete_Notion_Course_Improve_Your_Productivity.rar/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <!-- from 11  -->
+
+
+      <div class="card">
+        <img src="../Assests Free-Learning/12.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hacking Course</h5>
+          <p class="card-text">Decryption Key: ddX8ogxpECE1PqepSdzmVw</p>
+          <a href="https://mega.nz/folder/a1BABBYS#ddX8ogxpECE1PqepSdzmVw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img src="../Assests Free-Learning/13.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SMTP Email Server</h5>
+          <p class="card-text">Build Your Own SMTP Email Server: Send Unlimited Emails</p>
+          <a href="https://mega.nz/folder/T8swlZRA#w7Bj_NcBhoiTGuzFqDq8vg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/14.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">47GB Different Courses Packed</h5>
+          <p class="card-text">Different Courses Packed in One</p>
+          <a href="Decryption Key: l1WzmPHOIgtFSfiZZKeepw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/15.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Machine Learning</h5>
+          <p class="card-text">Machine Learning Full Course for Absolute Beginners</p>
+          <a href="https://www.mediafire.com/file/42wsj495qpl3krx/Machine_Learning_Full_Course_for_Absolute_Beginners.rar/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/16.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bug Hunting</h5>
+          <p class="card-text">Bug Bounty Hunting Course</p>
+          <a href="https://drive.google.com/drive/folders/1t-hTqg0-02t0cnc5SypHnb8t3CfE3bXU"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/17.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Insta Hack</h5>
+          <p class="card-text">Instagram Mega Hack Pack With Lots Of Insta Hack Tutorials</p>
+          <a href="https://www.mediafire.com/file/uzu562fkd5mwk4z/MEGA_INSTAGRAM_HACKPACK.zip/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/18.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BINNING COURSE</h5>
+          <p class="card-text">BINNING COURSE By Black Hat Pakistan</p>
+          <a href="https://www.mediafire.com/file/yhg3cu73n3j1ygy/BINNING+COURSE+By+Black+Hat+Pakistan.rar/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/19.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Red Rose Hacking</h5>
+          <p class="card-text">Red Rose Blood Hacking Course</p>
+          <a href="https://www.mediafire.com/file/5rfhietgb1xpk2d/RedRose_Blood_Hacking_Course_Uploaded_By_%2540manishter.rar/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/20.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">UX Structuring</h5>
+          <p class="card-text">UX Structuring before creating UI Course</p>
+          <a href="https://www.mediafire.com/file/0euxoasxbhfc7u7/UX_thinking___structuring_before_creating_UI.rar/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/21.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Blackhat/Fraud Pack</h5>
+          <p class="card-text">Blackhat/Fraud Pack | MAKE MONEY OFF FRAUD | COUNTLESS OF METHODS
+            FOR MONEY</p>
+          <a href="https://mega.nz/folder/J1gGSTjL#BB1Px1t8hdOYd7diqHawbg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <!-- no 22 -->
+
+
+      <div class="card">
+        <img src="../Assests Free-Learning/23.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Telegram Bot</h5>
+          <p class="card-text">Create telegram bot using python</p>
+          <a href="https://mega.nz/file/wl9jySRK#y0PUTnYpDFqKDseL8tD3iFWw5Vnvcb1RbF4gB-fzrgw"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/24.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Flutter</h5>
+          <p class="card-text">Complete Flutter Bootcamp</p>
+          <a href="https://mega.nz/folder/7c8yhbCR#lbUtbGOIqjdFU_tHHnddkw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/25.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Reverse Engineering</h5>
+          <p class="card-text">OTUS Reverse Engineering professional</p>
+          <a href="https://mega.nz/file/QpZnXSKB#hxnLKW8TV1yhAs6ipEAl-6JHV91vrhnjRPdZb1SWtsI "
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/26.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript Course</h5>
+          <p class="card-text">The Complete Guide: Everything you need to know about Promises in
+            JavaScript</p>
+          <a href="https://mega.nz/folder/r18SlK5A#XujjU4f3Fgd8bdhxeCg7-g" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/27.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Prompt Engineering</h5>
+          <p class="card-text">The Complete Guide: Everything you need to know about Promises in
+            JavaScript</p>
+          <a href="https://freshersgold.com/mastering-prompt-engineering-with-chatgpt-and-dall-e-gen-ai/"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/28.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Adobe Courses</h5>
+          <p class="card-text">Adobe Photoshop, Premier, Illustrator, Indesign, Incopy, Lightroom,
+            Acroba</p>
+          <a href="https://mega.nz/folder/Ehs3nA7a#qkryLONfv58kT6-5HUU0EA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/29.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Email Marketing</h5>
+          <p class="card-text">Email marketing course</p>
+          <a href="https://drive.google.com/drive/folders/1IgZCT3bhGB_0liGzATchUJZ-DvLmXKs5?usp=sharinghttps://drive.google.com/drive/folders/1IgZCT3bhGB_0liGzATchUJZ-DvLmXKs5?usp=sharing"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/30.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SHAHID ANWAR COURSES</h5>
+          <p class="card-text">SHAHID ANWAR - ALL PREMIUM COURSES
+            Shahid Anwar is an American Entrepreneur, Real Estate Investor and an Amazon
+            Millionaire</p>
+          <a href="https://drive.google.com/drive/folders/1KLZ8tmDAMpzvs-RPZ3q11z2CysvVkRo5"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/31.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">​Adsense Approve Method</h5>
+          <p class="card-text">​Adsense approve method</p>
+          <a href="https://drive.google.com/drive/folders/1L0Qz9adV1MUzxJ1V7ufq4G4o2qVjB7ZX?usp=sharing"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/32.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Youtube Automation</h5>
+          <p class="card-text">​Youtube Automation Course by Saad Rashide</p>
+          <a href="https://drive.google.com/drive/folders/1IX4-uxfnmEzlTKoFYY6JoiMHXwvcWRAo?usp=sharing"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/33.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">IIT-JEE Preparation Materials</h5>
+          <p class="card-text">​ALL IIT-JEE Preparation Materials for std 11 and 12th</p>
+          <a href="https://mega.nz/folder/F6hGCLiZ#azjYPfHKgl21BP4iqJiGrg/folder/xywhiCAJ"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/34.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">​CISA</h5>
+          <p class="card-text">​CISA - Certified Information System Auditor</p>
+          <a href="https://mega.nz/folder/4QwgVbhb#y-6jYclvod7Ir1JCfcTl4g" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/35.png" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CISM</h5>
+          <p class="card-text">CISM - Certified Information Security Manager</p>
+          <a href="https://mega.nz/folder/sMwyURRA#ddMhnsrn4_JiSF6Zid7Ckg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/36.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CISSP</h5>
+          <p class="card-text">CISSP - Certified Information Systems Security Professional</p>
+          <a href="https://mega.nz/folder/cQo0HZzD#2z7k3QeE80jKZ0Nhp1c6sw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/37.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CISSP - Preparation</h5>
+          <p class="card-text">CISSP - Cert Preparation</p>
+          <a href="https://mega.nz/folder/ccwQXZwZ#9rH9uZMzQTllnv14OK-TkQ" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/38.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CND</h5>
+          <p class="card-text">CND - Certified Network Defender</p>
+          <a href="https://drive.google.com/drive/folders/1KLZ8tmDAMpzvs-RPZ3q11z2CysvVkRo5"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/39.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CAPTD</h5>
+          <p class="card-text">Cyber Security Advanced Persistent Threat Defender</p>
+          <a href="https://mega.nz/folder/hA5ywDqL#TDjtCzB3Sry9NzhbzrUJWg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/40.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CSMD</h5>
+          <p class="card-text">SHAHID ANWAR - ALL PREMIUM COURSES Shahid Anwar is an American
+            Entrepreneur, Real Estate Investor, and an Amazon Millionaire</p>
+          <a href="https://drive.google.com/drive/folders/1KLZ8tmDAMpzvs-RPZ3q11z2CysvVkRo5"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <!-- 41 is not  -->
+
+
+      <div class="card">
+        <img src="../Assests Free-Learning/42.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CTIR</h5>
+          <p class="card-text">CTIR - Cyber Security Threat Intelligence Research</p>
+          <a href="https://mega.nz/folder/wcxkxLYD#ki8RTj57GApzpm-KK4Xfxw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/43.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Foreign Exchange</h5>
+          <p class="card-text">Foreign Exchange 1Tb Course</p>
+          <a href="https://mega.nz/folder/0QVGjDBY#hYNLkXYwEskPeLueq82jJg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/44.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dropshipping</h5>
+          <p class="card-text">Dropshipping course</p>
+          <a href="https://mega.nz/folder/BWUmnDqZ#0lBDssdUjcuK0OTUv0LTYA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/45.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Figma</h5>
+          <p class="card-text">Figma for designers</p>
+          <a href="https://mega.nz/folder/tVwQgQQJ#Aa8IqGC51qSstlg1SDA3DA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/46.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Video editing Film maker</h5>
+          <p class="card-text">Video editing Film maker full time course</p>
+          <a href="https://mega.nz/folder/zq5WwLqB#SNjgtdQLFO_DLLc0oFoyTg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/47.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Stock trading</h5>
+          <p class="card-text">Stock trading course</p>
+          <a href="https://mega.nz/folder/ypV1EKxZ#a4tYbAzKHYzWz3SnXnSsFw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/48.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">shorts algorithm</h5>
+          <p class="card-text">YouTube shorts algorithm course</p>
+          <a href="https://mega.nz/folder/ZGcF3KrD#8Tc7r8gNyjVPf9fS0QC12w/folder/BOllTAYI"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/49.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">FaceBook Ads</h5>
+          <p class="card-text">FaceBook Ads course</p>
+          <a href="https://mega.nz/folder/2awWhAhQ#C2aybyh9Jb7n1HDK_ANzpw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/50.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Redux</h5>
+          <p class="card-text">Redux Course</p>
+          <a href="https://mega.nz/folder/EkIEkRIS#z6UL4G2QckHBABR8p-xnxg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/51.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SQL</h5>
+          <p class="card-text">Complete SQL Master</p>
+          <a href="https://mega.nz/folder/ksYAXR5S#Oy9DapBfBrV2UyM_cksYhw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/52.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Xamarin forms</h5>
+          <p class="card-text">Xamarin forms</p>
+          <a href="https://mega.nz/folder/UpZgHTyL#2tjCxoieFkUglCTQQYBaJg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/53.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Advance exploitation</h5>
+          <p class="card-text">Advance exploitation course and tools</p>
+          <a href="https://mega.nz/folder/GFRVASRB#UC9ihGfw9jwHwsyNQwsRFA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/54.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Programming code collection</h5>
+          <p class="card-text">Programming code collection</p>
+          <a href="https://mega.nz/folder/vCJXVA4Q#68OC6mvov-sSpzX_beZvmQ" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/55.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fraud bible</h5>
+          <p class="card-text">Fraud bible 2020 pack</p>
+          <a href="https://mega.nz/folder/WZRW1ZIB#FTs8Dgihs3Ifu4wz3l6zgQ" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/56.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Python</h5>
+          <p class="card-text">The complete python bootcamp</p>
+          <a href="https://mega.nz/folder/9AJiTBgK#qwxiC8dt1HWdTAgnIeujOw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/57.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Udemy Programming and Cyber Security</h5>
+          <p class="card-text">Udemy Programming and Cyber Security Course</p>
+          <a href="https://mega.nz/folder/YzJ1gKAR#aT9fvpwVe5OIICRUdjEf7Q/folder/Mr4XTACQ"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/58.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Machine learning</h5>
+          <p class="card-text">Machine learning with Complete Python (Basic to Advanced)</p>
+          <a href="https://mega.nz/folder/1Ip3xSgT#QBATxJcbIqYFtg6muJKArw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/59.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Motion graphics 2D and 3D</h5>
+          <p class="card-text">Motion graphics 2D and 3D With After effect and Autodesk</p>
+          <a href="https://mega.nz/folder/WEIU1LaA#rY4o0lGxFBTSe-ZtUsvB4w" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/60.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MegaPack 1.3TB Paid Courses</h5>
+          <p class="card-text"> Amazon FBA , Crypto Currency , Ebook Advertising , Facebook MARKETING ,Social Media
+            Marketing</p>
+          <a href="https://mega.nz/folder/DtARzS5I#D5it7IBEfT9vSJktGAs3aw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/61.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">USB Rubber Ducky</h5>
+          <p class="card-text">Design your own USB Rubber Ducky Ethical Hacking tool</p>
+          <a href="https://mega.nz/file/8FgXlKDR#EJP0B_hCHUkCKc3qs-qRElTdVHeXBR6RqQ5nHM6eXwo"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/62.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Midjourney Course</h5>
+          <p class="card-text">Midjourney Mastery Course</p>
+          <a href="https://mega.nz/folder/3cZ1iKBZ#ILH5JoUWkHI0FgOf3eeG8w/folder/qZoG3A7Q"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/63.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bug bounty</h5>
+          <p class="card-text">Bug bounty Website hacking Premium Course > Decryption key:-
+            q7R_62r30NZI_aavJoeplQ</p>
+          <a href="https://mega.nz/folder/5OxWGCQS#q7R_62r30NZI_aavJoeplQ" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/64.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Andrew Tate & Tristan Tate Courses</h5>
+          <p class="card-text">All Andrew Tate & Tristan Tate Courses</p>
+          <a href="https://mega.nz/folder/SpgTVKCJ#2F5onmYSS25fmXPOLKqgG" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/65.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Linux administration</h5>
+          <p class="card-text">Linux administration</p>
+          <a href="https://mega.nz/folder/P0lnCaST#kiPAI2iyRVtQEdul95Qtgw" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/66.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bang on 1 by PushkarRaj Thakur</h5>
+          <p class="card-text">Bang on 1 by PushkarRaj Thakur Course</p>
+          <a href="https://mega.nz/folder/nmxGRAJK#8c_aquMWrjoG98Xz1xzBqQ" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/67.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bang on 2 by PushkarRaj Thakur</h5>
+          <p class="card-text">Bang on 2 by PushkarRaj Thakur Course</p>
+          <a href="https://mega.nz/folder/CugwDQxA#VWfzKbt8j_OkZe7vwczQn" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/68.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Web Security</h5>
+          <p class="card-text">Web Security Academy Series | Rana Khalil</p>
+          <a href="https://mega.nz/file/8FgXlKDR#EJP0B_hCHUkCKc3qs-qRElTdVHeXBR6RqQ5nHM6eXwo"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/69.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Red teaming</h5>
+          <p class="card-text">Red teaming course - active directory penetesting with Kali
+            Linux</p>
+          <a href="https://mega.nz/folder/9E4zDSAK#qpO_t84aBYReOLaWhSPGww" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/70.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ultimate Cracking</h5>
+          <p class="card-text">The Ultimate Cracking Tutorials</p>
+          <a href="https://mega.nz/folder/FNEy1TQJ#2SH1leo0w1YdcaqZ9lM9Rg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/71.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Phishing</h5>
+          <p class="card-text">Practical Phishing Full Course</p>
+          <a href="https://mega.nz/folder/5g92yJoD#27k3xn8gwV4wrx4gzJoHSg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/72.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bug bounty</h5>
+          <p class="card-text">Bug bounty course</p>
+          <a href="https://mega.nz/folder/96AhRazA#Qci5-I29JIQobl4btJ7w0g" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/73.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kali Linux</h5>
+          <p class="card-text">Use Kali Linux like a hacker with Red Team Tactics</p>
+          <a href="https://mega.nz/folder/xj1BFAyS#M0kafCEXsGMuxu2SaxwIkA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/74.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">WHATSAPP HACKING</h5>
+          <p class="card-text">WHATSAPP HACKING USING GIF FILE</p>
+          <a href="https://mega.nz/folder/U8MDQY7B#Z_4cjgjqsHDdoGL6weV2yQ" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/75.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">OWASP Top 10</h5>
+          <p class="card-text">An Introduction to OWASP Top 10 Vulnerabilities</p>
+          <a href="https://mega.nz/folder/RxkCWBbC#Iio3ie_Tg2D-EgBz3C0IEA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/76.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">All about Operating Systems</h5>
+          <p class="card-text">(1). TURMUX (2). KALI LINUX (3). UBUNTU (4). PARROT OS (5).
+            ARCH LINUX</p>
+          <a href="https://mega.nz/folder/kM9B1YgD#UdA5mgR04XgoBLO4XXU6Wg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/77.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PHP web development</h5>
+          <p class="card-text">PHP web development</p>
+          <a href="https://mega.nz/folder/q50DxLLZ#kprng6OBL5kP-VOPsgyJqA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/78.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">8 IN 1 HACKING | CRACKING | CHECKERS PACK</h5>
+          <p class="card-text">ʙᴇsᴛ ғᴏʀᴛɴɪᴛᴇ ᴘᴀᴄᴋ ᴄʀᴀᴄᴋɪɴɢ ɪɴᴄʟᴜᴅɪɴɢ ᴄʜᴇᴄᴋᴇʀs ᴀɴᴅ ᴘʀᴏxʏ ᴛᴏᴏʟs
+            ʜɪɢʜ ᴄᴘᴍ</p>
+          <a href="https://mega.nz/folder/w6B3ySAb#2KNFKHFiLYEE9iYp--Z68Q" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/79.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">WIFI HACKING</h5>
+          <p class="card-text">WIFI HACKING COURSE BUNDLE</p>
+          <a href="https://mega.nz/folder/ypgg3QJS#GmKAHx44BgENWi-ZBKNnOA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/80.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">HQ hacking</h5>
+          <p class="card-text">HQ hacking - a highly skilled hacker</p>
+          <a href="https://mega.nz/folder/5OxWGCQS#q7R_62r30NZI_aavJoeplQ" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/81.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Android Hacking</h5>
+          <p class="card-text">Android Hacking Apps Collection - Note: most of these apps will
+            work on rooted Android phones</p>
+          <a href="https://mega.nz/folder/mERTGIgT#wDELxCy096qCIDA-xx5h1g" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/82.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cracking course 1</h5>
+          <p class="card-text">Course 1 - Cracking course to make you ULTRA PRO</p>
+          <a href="https://mega.nz/folder/6pggnYwD#zncBEg-OKsWLs4soZGqwFg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/83.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cracking course 2</h5>
+          <p class="card-text">Course 2 - Cracking course to make you ULTRA PRO</p>
+          <a href="https://mega.nz/#!xjwF0DDZ!82FTVih6FgEI8lw0ZGfU9Q6YT_G6sWoSnrHWlnRsEAw"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/84.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Create Malware and Virus</h5>
+          <p class="card-text">CREATE UNDETECTABLE MALWARE AND VIRUSES</p>
+          <a href="https://mega.nz/folder/5V4R3QyC#3NaPApDjgZzBbaum-EeLSg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/85.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Web Development</h5>
+          <p class="card-text">Become a Web Developer (HTML5;CSS;JavaScript;Ruby;Ajax; SQL)
+            Learn Practical Hands-on Web Development From Scratch</p>
+          <a href="https://mega.nz/folder/KxhBHQZT#6L-57x0w3L4jowjIlrRQ6w" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/86.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TCM security</h5>
+          <p class="card-text">TCM security course Tutorials</p>
+          <a href="https://mega.nz/folder/Q7VgCDaR#W7y2-dmaDov7acfG5L6VNg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/87.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Full Stack - JS</h5>
+          <p class="card-text">Full Stack - JS bootcamp course</p>
+          <a href="https://mega.nz/folder/0cpE0LRY#Ky4F1-eRINjRnTkp7yd9fQ" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/88.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ransomware in Java and Defense</h5>
+          <p class="card-text">Art of Making Real-World Ransomware in Java and Defense</p>
+          <a href="https://mega.nz/folder/OxdlDQ5D#BTKwQ6Y5VehpWjO-OnfY2Q" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/89.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Crypto Currency</h5>
+          <p class="card-text">Crypto Currency course</p>
+          <a href="https://mega.nz/folder/6GwzWDyI#S5mJK_DyXcUZrXrShqzqdA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/90.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Forex trading</h5>
+          <p class="card-text">Forex trading course</p>
+          <a href="https://mega.nz/folder/ReUDQb5C#R8CrUn6o0ZxvCWn5grVDww" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/91.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CISCO CCNA networking</h5>
+          <p class="card-text">CISCO CCNA networking course</p>
+          <a href="https://mega.nz/folder/Bro0kIpY#5bxE_48py3JRf8NmSYsINAA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/92.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">IELTS Course</h5>
+          <p class="card-text">IELTS Course Bundle For Commerce Students</p>
+          <a href="https://mega.nz/folder/8wo0xSZb#AYLsRPmB-4svkVH1qTvbIg/folder/8t5THQ7A"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/93.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mobile Ethical Hacking</h5>
+          <p class="card-text">Mobile Cyber Security for Mobile Applications & Devices -
+            The
+            Complete Mobile Ethical Hacking Course</p>
+          <a href="https://mega.nz/file/DxdX3CgR#a5oCJQtpRWYIGGXG50XmSNCYAS1_3mPexX4rtq4-4YE"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/94.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Windows Exploit Development</h5>
+          <p class="card-text">Windows Exploit Development Complete Course</p>
+          <a href="https://www.mediafire.com/file/89pdu01mp2h4686/Windows+Exploit+Development.7z/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/95.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SIM-CARD CLONING</h5>
+          <p class="card-text">SIM-CARD CLONING - Password: NARDOS</p>
+          <a href="https://www.mediafire.com/file/aqk4kgnjx6pdc10/SIM_CARD_CLONING_BY_%2540EthicalTeam.zip/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/96.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">WI-FI HACKING</h5>
+          <p class="card-text">WI-FI HACKING Using Backtrack - PASSWORD: NARDOSse</p>
+          <a href="https://www.mediafire.com/file/d3yxg6n8vh54doa/@EthicalTeam+WIFI+Hacking+Using+Backtrack.zip/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/97.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Carding Course</h5>
+          <p class="card-text">Carding Course</p>
+          <a href="https://www.mediafire.com/file/vt5k0m42c2z0fuv/@EthicalTeam+CARDING+COURSE.zip/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/98.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">DRONE PROGRAMMING</h5>
+          <p class="card-text">DRONE PROGRAMMING Course</p>
+          <a href="https://www.mediafire.com/file/usb0mb0a0b1pvsb/DRONE+PROGRAMMING+COURSE+-+@EthicalTeam.mp4/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/99.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Termux</h5>
+          <p class="card-text">Termux Complete understanding</p>
+          <a href="https://www.mediafire.com/file/1tfvl2ou6wy4ubv/Termux+Complete+Tutorial+@virtual-riches.mp4/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/100.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Instagram Hacking</h5>
+          <p class="card-text">Instagram Hacking Course - Learn A To Z How to Hack
+            Instagram
+          </p>
+          <a href="https://www.mediafire.com/file/1wt7a52z5gnalv3/Instagram+Hacking.zip/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/101.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Canva Magic Studio</h5>
+          <p class="card-text"> Canva Magic Studio Masterclass | Your Generative Ai Partner</p>
+          <a href="https://mega.nz/folder/Mr012JID#Xk2kf_128K8MjSSIDTCcMA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/102.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">WEB RECONAISSANCE</h5>
+          <p class="card-text">THE ART OF WEB RECONAISSANCE - password (@udemyking1)</p>
+          <a href="https://mega.nz/folder/9rFHmaBJ#Zmj5WlhJxSJ2QmwtYRLcgA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/103.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Marketing With Chatgpt</h5>
+          <p class="card-text">Social Media Marketing With Chatgpt & Generative Ai Tools</p>
+          <a href="https://mega.nz/folder/x71kSIQR#J548hPvzuzEUuLuxyZ1h3w" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/104.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Html & Css</h5>
+          <p class="card-text">Complete Guide In Html & Css – Build Responsive Website</p>
+          <a href="https://mega.nz/folder/x2Eh3bDa#ujL_EV_y3ES3KK8eY2cVqA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/105.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mysql Bootcamp</h5>
+          <p class="card-text">The Complete Mysql Bootcamp: Go From Beginner To Expert</p>
+          <a href="https://mega.nz/folder/UyNCRLoB#ZfWEh_rhBRjmFn5dY-D0JQ" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/106.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Malware Using C Language</h5>
+          <p class="card-text">Make FUD Malware Using C Language</p>
+          <a href="https://www.mediafire.com/file/80fa992klfnv4vk/Git+Essential+Training.zip/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/107.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cyber Security Course</h5>
+          <p class="card-text">Cyber Security Full Course</p>
+          <a href="https://mega.nz/folder/5vMVlAiA#AamXmP19x6ErREXmGDWGOQ" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/108.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Master ChatGPT</h5>
+          <p class="card-text">Dhruv Rathee – Master ChatGPT: Transform Your Life With AI Chatbots</p>
+          <a href="https://mega.nz/folder/x6cnySxb#aYeQr8YCjoBpIBsCGwAN2As" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img src="../Assests Free-Learning/109.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TERMUX</h5>
+          <p class="card-text">TERMUX COMPLETE ANDROID ETHICAL HACKING TUTORIAL</p>
+          <a href="https://mega.nz/folder/J6dnACrL#2GQAiGAvTatQO6g_cHxyiA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+      <!-- no 110 -->
+
+      <div class="card">
+        <img src="../Assests Free-Learning/111.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BUG BOUNTY</h5>
+          <p class="card-text">BUG BOUNTY COURSE 2023 advance topic</p>
+          <a href="https://mega.nz/folder/96AhRazA#Qci5-I29JIQobl4btJ7w0g" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/112.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TRADING EDGE</h5>
+          <p class="card-text">AXIA TRADING EDGE COURSE</p>
+          <a href="https://mega.nz/folder/h2hCzI7L#tNrIvQL4Zkng43T_fgASHA" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/113.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TIKTOK MASTERY</h5>
+          <p class="card-text">TIKTOK MASTERY HOW TO USE TIKTOK ADS TO GO ، FROM 0-$10K PROFIT PER MONTH</p>
+          <a href="https://mega.nz/folder/TWBnWKzJ#j4SQmVj-SJ6acc4xeDxSKg" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/114.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Courses Pack</h5>
+          <p class="card-text">courses pack - 500 TB Tutorials + Books + Courses + Trainings + Workshops +
+            Educational
+            Resources</p>
+          <a href="https://drive.google.com/drive/u/0/folders/1CgN7DE3pNRNh_4BA_zrrMLqWz6KquwuD"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/115.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Blockchain Developer</h5>
+          <p class="card-text">Blockchain Developer Nanodegree Program</p>
+          <a href="https://www.mediafire.com/file/upmog2ko9z2pm0k/%2540H4CKT3R_bot-Udacity_-Blockchain_Developer_Nanodegree_Program.rar/file"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/116.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Carding</h5>
+          <p class="card-text">Learn carding</p>
+          <a href="https://mega.nz/folder/03tHjRSI#NM6bL9UJmerudWARsJP95A" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Assests Free-Learning/117.jpg" class="card-img-top img-fit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PREMIUM GRAPHICS</h5>
+          <p class="card-text">11 GB ENVATO PREMIUM GRAPHICS</p>
+          <a href="https://drive.google.com/drive/folders/1oUdSNGgxKyzVsCEEaZB_zouNNRv_TWdl"
+            class="btn btn-primary">Download</a>
+        </div>
+      </div>
+
+
+
+      <!-- Repeat the structure for additional cards -->
+
+
+    </main>
+  </body>
+
+</html>
